@@ -36,16 +36,16 @@ All examples in this repository are **conceptual or synthetic** and do not repre
 The original system followed an ETL-style design:
 Raw Images
 |
-v
+V
 Segmentation / ROI Extraction
 |
-v
+V
 Feature Engineering
 |
-v
+V
 Dataset Standardization
 |
-v
+V
 Analytics & ML Modeling
 
 Key design goals:
