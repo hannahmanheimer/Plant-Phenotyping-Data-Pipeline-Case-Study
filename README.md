@@ -41,7 +41,7 @@ flowchart TD
     C --> D[Dataset standardization<br/>(schema + metadata join)]
     D --> E[Outputs<br/>CSV / analytics-ready tables]
     E --> F[Downstream use<br/>EDA, stats, ML modeling, dashboards]
-
+```
 ```
 Raw Images
    |
