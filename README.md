@@ -34,20 +34,21 @@ All examples in this repository are **conceptual or synthetic** and do not repre
 
 ## Pipeline Architecture
 The original system followed an ETL-style design:
+```
 Raw Images
-|
-V
+   |
+   v
 Segmentation / ROI Extraction
-|
-V
+   |
+   v
 Feature Engineering
-|
-V
+   |
+   v
 Dataset Standardization
-|
-V
+   |
+   v
 Analytics & ML Modeling
-
+```
 Key design goals:
 - Scalability to large image batches
 - Reproducibility across experiments
