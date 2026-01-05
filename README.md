@@ -109,6 +109,15 @@ All proprietary code, internal tooling, and datasets have been intentionally exc
 
 This repository exists solely to demonstrate **technical approach, system design, and applied ML/data engineering methodology**.
 
+## Future Improvements
+If this system were extended beyond its original scope, potential enhancements could include:
+
+- **Pipeline orchestration:** Introduce a workflow orchestrator (e.g., Airflow or Dagster) to schedule batch runs, manage dependencies, and improve observability.
+- **Data validation & quality checks:** Add automated validation to detect corrupted images, incomplete metadata, or out-of-distribution inputs prior to feature extraction.
+- **Parallelization & performance optimization:** Scale feature extraction through parallel or distributed processing to reduce end-to-end runtime on larger datasets.
+- **Schema versioning & lineage tracking:** Implement dataset versioning and lineage metadata to support reproducibility across experiments and modeling iterations.
+- **Extension to additional modalities:** Generalize the pipeline to support other imaging modalities or time-series sensor data using the same ETL framework.
+
 ---
 
 ## Contact
