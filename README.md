@@ -35,13 +35,17 @@ All examples in this repository are **conceptual or synthetic** and do not repre
 ## Pipeline Architecture
 The original system followed an ETL-style design:
 Raw Images
-↓
+|
+v
 Segmentation / ROI Extraction
-↓
+|
+v
 Feature Engineering
-↓
+|
+v
 Dataset Standardization
-↓
+|
+v
 Analytics & ML Modeling
 
 Key design goals:
