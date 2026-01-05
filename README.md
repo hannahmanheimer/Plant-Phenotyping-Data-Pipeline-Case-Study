@@ -36,26 +36,11 @@ All examples in this repository are **conceptual or synthetic** and do not repre
 The original system followed an ETL-style design:
 ```mermaid
 flowchart TD
-  A[Raw plant images (batch folders)] --> B[Segmentation / ROI extraction (Ilastik + preprocessing)]
-  B --> C[Feature extraction (color + morphology traits)]
-  C --> D[Dataset standardization (schema + metadata join)]
-  D --> E[Outputs (CSV / analytics-ready tables)]
-  E --> F[Downstream use (EDA, stats, ML modeling, dashboards)]
-```
-```
-Raw Images
-   |
-   v
-Segmentation / ROI Extraction
-   |
-   v
-Feature Engineering
-   |
-   v
-Dataset Standardization
-   |
-   v
-Analytics & ML Modeling
+    A["Raw plant images (batch folders)"] --> B["Segmentation / ROI extraction (Ilastik + preprocessing)"]
+    B --> C["Feature extraction (color + morphology traits)"]
+    C --> D["Dataset standardization (schema + metadata join)"]
+    D --> E["Outputs (CSV, analytics-ready tables)"]
+    E --> F["Downstream use (EDA, statistics, ML modeling, dashboards)"]
 ```
 Key design goals:
 - Scalability to large image batches
